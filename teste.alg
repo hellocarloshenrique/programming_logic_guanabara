@@ -11,6 +11,6 @@ inicio
     escreva("Agora escreva outro número: ")
     leia(numero2)
     soma <- numero1 + numero2
-    escreva(nome, " a soma desses numeros é: ", soma)
+    escreva(nome, ", a soma de " , numero1,  " e ", numero2, " é igual a: ", soma)
 
 fimalgoritmo
