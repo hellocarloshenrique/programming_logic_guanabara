@@ -1,7 +1,8 @@
 algoritmo "primeiro"
 var
-    msg: caractere
+    nome: caractere
 inicio
-    msg <- "Hello, World!"
-    escreval(msg)
+    escreva("Digite seu nome: ")
+    leia (nome)
+    escreva("Muito prazer, Sr. ", nome)
 fimalgoritmo
