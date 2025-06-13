@@ -2,7 +2,7 @@ algoritmo "primeiro"
 var
     nome: caractere
     numero1, numero2: inteiro
-    soma: inteiro
+    media: real
 inicio
     escreva("Digite seu nome: ")
     leia (nome)
@@ -10,7 +10,7 @@ inicio
     leia(numero1)
     escreva("Agora escreva outro número: ")
     leia(numero2)
-    soma <- numero1 + numero2
-    escreva(nome, ", a soma de " , numero1,  " e ", numero2, " é igual a: ", soma)
+    media <- (numero1 + numero2) / 2
+    escreva(nome, ", a média de " , numero1,  " e ", numero2, " é igual a: ", media)
 
 fimalgoritmo
