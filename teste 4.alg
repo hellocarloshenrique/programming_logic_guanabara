@@ -13,6 +13,11 @@ inicio
 a <- 2
 b <- 3
 c <- 5
-escreva(a<>b)
+escreval(c>=a^b)
+escreval(c<=a^b)
+escreval(verdadeiro E verdadeiro)
+escreval((c<a) ou (b<c))
+escreval((c<a) e (b<c))
+
 
 fimalgoritmo
