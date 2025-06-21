@@ -21,7 +21,7 @@ inicio
         escreval ("Você tem ", permissao, ", não possui idade para dirigir.")
     senao
         escreval ("Parabéns!")
-        escreval ("Você tem ", permissao, ", possui ideade suficente para dirigir.")
+        escreval ("Você tem ", permissao, ", possui idade suficente para dirigir.")
     fimse
     escreval("-------------------------")
 
