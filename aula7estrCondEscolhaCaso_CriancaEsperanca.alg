@@ -7,7 +7,6 @@ inicio
     escreva("      Criança Esperança       ")
     escreva("------------------------------")
     escreva("  Muito obrigado por ajudar   ")
-    escreva("  Muito obrigado por ajudar   ")
 
 
 fimalgoritmo
