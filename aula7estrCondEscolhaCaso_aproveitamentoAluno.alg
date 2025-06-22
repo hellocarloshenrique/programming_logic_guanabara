@@ -33,7 +33,7 @@ inicio
                     se (media >= 5) e (media < 6) entao 
                         escreva(" Aproveitamento E")
                     senao
-                        escreva(" Aproveitamento F")
+                        escreva(" Aproveitamento F teste teste teste")
                     Fimse
                 Fimse
             Fimse
