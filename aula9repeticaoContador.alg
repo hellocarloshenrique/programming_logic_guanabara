@@ -4,10 +4,11 @@ var
     contador: inteiro
 
 inicio
-    contador <- 0
-    Enquanto (contador <= 10) faca
+    contador <- 20
+    Enquanto (contador >= 0) faca
     escreval("numero ", contador)
-    contador <- (contador + 1)
+    contador <- (contador - 1)
     FimEnquanto
+    escreval("terminei de escrever.")
 
 fimalgoritmo
