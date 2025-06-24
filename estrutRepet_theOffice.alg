@@ -12,12 +12,12 @@ inicio
     Escreval("--------------------------------------------------")
 
     contador <- 1
-    Enquanto (contador <= 5) e (folhasVendidas = 1000) faca
+    Enquanto (contador <= 5) e (folhasVendidas <> 1000) faca
         escreval("Inspeção de numero: ", contador)
         escreva ("Qual o seu nome? ")
         leia(nome)
         escreva("Quantas folhas você vendeu, ", nome, "? ")
-        leia(folhasvendidas)
+        leia(folhasVendidas)
 
         se (folhasVendidas = 1000) entao
             escreval ("isso é mediocridade, ", nome, "! Você está na minha lista.\n")
