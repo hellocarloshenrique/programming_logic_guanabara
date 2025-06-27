@@ -27,10 +27,10 @@ inicio
             melhorAluno <- aluno
 
         Fimse
-
         cont <- cont + 1
+
     fimenquanto
 
-    escreva("O melhor aproveitamento foi de ",aluno, " com a nota ", melhorNota)
+    escreva("O melhor aproveitamento foi de ",melhorAluno, " com a nota ", melhorNota)
 
 fimalgoritmo
