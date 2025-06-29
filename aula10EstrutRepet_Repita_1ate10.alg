@@ -4,8 +4,10 @@ var
     cont, numTab, resTab: inteiro
 inicio
     cont <- 1
-    numTab <- 7
-    escreval("-------------------")
+    //numTab <- 7
+    escreva("Qual tabuada você quer ver? ")
+    leia(numTab)
+    escreval("\n-------------------")
     escreval("tabuada do ", numTab)
     escreval("-------------------\n")
     repita
