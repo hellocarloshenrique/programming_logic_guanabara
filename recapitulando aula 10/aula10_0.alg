@@ -6,16 +6,16 @@ var
 
 inicio
     s <- 0
-    resp <- "s"
-    enquanto (resp = "s") faca
-        escreva ("ditige o ", cont, " numero: ")
+    
+    repita
+        escreva("Digite o ", num, " valor: ")
         leia(num)
+        s <- s + num    
 
-        s <- s + num
-        escreva("Você ainda quer digitar valores? ")
+        escreva("você ainda uer digitar um valor? [S/N] ")
         leia(resp)
-    fimenquanto
 
-    escreva("A soma dos valores é: ", s)
+    ate (resp = "n")
+    escreva("A soma de todos os valores é: ", s)
 
 fimalgoritmo
