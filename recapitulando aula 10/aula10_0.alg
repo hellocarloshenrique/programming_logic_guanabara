@@ -8,7 +8,7 @@ inicio
     s <- 0
     
     repita
-        escreva("Digite o ", num, " valor: ")
+        escreva("Digite o ", cont, " valor: ")
         leia(num)
         s <- s + num    
 
