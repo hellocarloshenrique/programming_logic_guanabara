@@ -6,9 +6,9 @@ var
 inicio
     cont <- 1
 
+    repita
         escreva("Digite um numero: ")
         leia(num)
-    repita
         Repita
             se (num % cont = 0) entao
             contDiv <- contDiv + 1
@@ -24,7 +24,9 @@ inicio
         fimse
 
         escreva("Deseja continar verificando numeros primos? [S/N]")
+        leia(resp)
+    
+    limpaTela
     ate (resp = "n")
     
-
 fimalgoritmo
