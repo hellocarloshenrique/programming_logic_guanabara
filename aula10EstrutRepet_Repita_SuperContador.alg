@@ -2,6 +2,7 @@ algoritmo "superContador"
 
 var
     contPositivo, contNegativo, valor: inteiro
+    resp: caractere
 
 inicio
     escreval("-------------------------")
@@ -13,28 +14,37 @@ inicio
     escreval("-------------------------")
 
 
+    contPositivo <- 1
+    contNegativo <- 10
+
     repita
         escreva("\nDigite: ")
         leia(valor)
 
         se (valor = 1) entao
-            contPositivo <- 1
             repita
                 escreva(contPositivo," ")
                 contPositivo <- contPositivo + 1
             ate (contPositivo > 10)
+            escreval("\n-------------------------")
         senao
             se (valor = 2) entao
-                contNegativo <- 10
                 repita
                     escreva(contNegativo," ")
                     contNegativo <- contNegativo - 1
                 ate (contNegativo < 1)
+                escreval("\n-------------------------")
             senao
-                escreval ("finalizando...")
+                se (valor = 3) entao
+                    escreval ("finalizando...")
+                senao
+                    escreval ("Inválido. Digite novamente.")
+                fimse
             fimse
         fimse
         escreva("\n")
-    ate (valor = 5)
+        escreva("Deseja continuar? [S/N]")
+        leia(resp)
+    ate (resp = "n")
 
 fimalgoritmo
