@@ -7,9 +7,10 @@ algoritmo "Tabuada Completa"
 var
 numTab, resultadoTab, cont: inteiro
 
-procedimento exibir_tabuada(num, cont, resultado: inteiro)
+procedimento exibir_tabuada(num: inteiro)
+var
+cont, resultado: inteiro
 inicio
-
     para cont <- 1 ate 10 faca
         resultado <- cont * num
         escreval (num, " x ", cont, " = ", resultado)
@@ -19,6 +20,5 @@ fimProcedimento
 inicio
     escreva("Que tabuada você deseja saber? ")
     leia(numTab)
-    exibir_tabuada(numTab, cont, resultadoTab)
-
+    exibir_tabuada(numTab)
 fimalgoritmo
