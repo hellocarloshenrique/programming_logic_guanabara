@@ -7,7 +7,7 @@ algoritmo "Calculadora Simples"
 var
     primeiro_num, ultimo_num, soma: inteiro
 
-Procedimento calcular_soma(num1, num2: inteiro, var soma: inteiro)
+Procedimento calcular_soma(num1, num2: inteiro var soma: inteiro)
 inicio
     soma <- num1 + num2
 fimProcedimento
