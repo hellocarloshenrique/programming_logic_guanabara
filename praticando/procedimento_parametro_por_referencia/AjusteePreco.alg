@@ -30,8 +30,6 @@ inicio
     escreval("Novo valor: ", num2)
     escreval("Novo valor: ", num3)
     escreval("Novo valor: ", num4)
-    // escreva(num3*porcent)
-    // escreva(num4*porcent)
 
 fimProcedimento
 
