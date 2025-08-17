@@ -15,7 +15,7 @@ inicio
     escreva("Digite o segundo valor: ")
     leia(v2)
 
-    s <- soma(v1 + v2)
+    s <- soma(v1, v2)
 
     escreva("A soma de ", v1, " e ",v2," é igual a ", s)
 
