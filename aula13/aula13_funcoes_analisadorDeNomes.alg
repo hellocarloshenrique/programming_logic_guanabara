@@ -13,5 +13,7 @@ inicio
     escreval("Seu nome tem a letra A na posição: ", pos("a", n))
     escreval("O codigo da letra A é: ", asc("A"))
     escreval("O codigo 65 é a letra:", carac(65))
+    
+    
 
 fimalgoritmo
