@@ -11,11 +11,14 @@ inicio
     para i <- 1 ate 5 faca
         escreva ("Digite o ", i, "º valor: " )
         leia(valor[i])
+    fimpara
 
+    para i <- 1 ate 5 entao
         se (valor[i] % 2 = 0) entao
             totPar <- totPar + 1
-        fimse
-    fimpara
+            escreval("valor par na posicao: ", i)
+        fimSe
+    fimPara
 
     escreval("O total de numeros pares foi ", totPar)
 fimalgoritmo
