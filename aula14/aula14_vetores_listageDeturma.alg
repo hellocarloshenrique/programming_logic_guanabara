@@ -21,4 +21,10 @@ inicio
         m[i] <- (n1[i] + n2[i]) / 2
     fimpara
 
+    limpatela
+    escreval("Listagem de alunos\n") 
+
+    para i <- 1 ate 4 faca
+        escreval(nome[i]:15, m[i]:4:1)
+    fimPara
 fimAlgoritmo
