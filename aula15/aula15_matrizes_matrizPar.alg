@@ -16,7 +16,13 @@ inicio
     escreval("-----------------")
     para line <- 1 ate 3 faca
         para column <- 1 ate 3 faca
-            escreva(valores[line, column]:3)
+
+            se (valores[line, column]  % 2 = 0) entao
+                escreva("[", valores[line,column]:2, "]")
+            senao
+                escreva(valores[line, column]:8)    
+            fimse
+
         fimPara
         escreval()
     fimPara
