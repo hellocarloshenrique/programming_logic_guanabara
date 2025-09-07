@@ -98,7 +98,7 @@ inicio
                         fimPara
                         escreval()  
                     senao
-                    escreval ("ainda to vendo esse")
+                    escreval ("Obrigado")
                     fimse
                 fimse
             fimse
