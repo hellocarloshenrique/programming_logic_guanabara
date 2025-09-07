@@ -33,8 +33,8 @@ inicio
 
     escolha opcoes
         caso 1
-            opcao_desejada()
             // apresentar todos os valores da matriz
+            escreval()
             escreval()
             escreval("opcao escolhida foi ", opcoes)
             para line <- 1 ate 4 faca 
@@ -43,9 +43,14 @@ inicio
                 fimPara
                 escreval()
             fimPara
+                escreval()
+
+            opcao_desejada()
+            escreva("Digite uma opcao: ")
+            leia(opcoes)
+            limpaTela 
 
         caso 2
-            opcao_desejada()
             // apresentar a diagonal principal da matriz
             escreval()
             escreval("opcao escolhida foi ", opcoes)
@@ -59,8 +64,50 @@ inicio
                 fimPara
                 escreval()
             fimPara
+                escreval()
+
+            opcao_desejada()
+            escreva("Digite uma opcao: ")
+            leia(opcoes)
+            limpaTela 
 
         caso 3
+            escreval()
+            para line <- 1 ate 4 faca 
+                para column <- 1 ate 4 faca
+                    se (column > line) entao 
+                        escreva(matriz[line, column]:3)
+                    senao
+                        escreva("   ") // Espacos para manter o alinhamento
+                    fimSe
+                fimPara
+                escreval() // Pula uma linha no final de cada linha da matriz
+            fimPara
+            escreval()
+
+            opcao_desejada()
+            escreva("Digite uma opcao: ")
+            leia(opcoes)
+            limpaTela 
+
+        caso 4
+            escreval()
+            para line <- 1 ate 4 faca 
+                para column <- 1 ate 4 faca
+                    se (column >= line) entao  
+                        escreva("   ")
+                    senao
+                        escreva(matriz[line, column]:3)
+                    fimSe
+                fimPara
+                escreval()
+            fimPara
+            escreval()
+
+            opcao_desejada()
+            escreva("Digite uma opcao: ")
+            leia(opcoes)
+            limpaTela 
         
     fimEscolha
 
