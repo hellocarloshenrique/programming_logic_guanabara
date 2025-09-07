@@ -17,7 +17,6 @@ inicio
 fimFuncao
 
 
-
 inicio
     // usuario preenche os dados da matriz
     para line <- 1 ate 4 faca
@@ -35,20 +34,21 @@ inicio
         leia(opcoes)
         limpaTela     
 
-        se (opcoes = 1) entao
-            // apresentar todos os valores da matriz
-            escreval()
-            escreval("opcao escolhida foi ", opcoes)
-            escreval()
-            para line <- 1 ate 4 faca 
-                para column <- 1 ate 4 faca
-                    escreva(matriz[line,column]:3)
+        escolha opcoes
+            caso 1
+                // apresentar todos os valores da matriz
+                escreval()
+                escreval("opcao escolhida foi ", opcoes)
+                escreval()
+                para line <- 1 ate 4 faca 
+                    para column <- 1 ate 4 faca
+                        escreva(matriz[line,column]:3)
+                    fimPara
+                    escreval()
                 fimPara
                 escreval()
-            fimPara
-            escreval()
-        senao
-            se (opcoes = 2) entao
+
+            caso 2
                 // apresentar a diagonal principal da matriz
                 escreval()
                 escreval("opcao escolhida foi ", opcoes)
@@ -64,44 +64,43 @@ inicio
                     escreval()
                 fimPara
                 escreval()
-            senao
-                se (opcoes = 3) entao
-                    escreval()
-                    escreval("opcao escolhida foi ", opcoes)
-                    escreval() 
-                    para line <- 1 ate 4 faca 
-                        para column <- 1 ate 4 faca
-                            se (column > line) entao 
-                                escreva(matriz[line, column]:3)
-                            senao
-                                escreva("   ") // Espacos para manter o alinhamento
-                            fimSe
-                        fimPara
-                        escreval() // Pula uma linha no final de cada linha da matriz
+
+            caso 3
+                escreval()
+                escreval("opcao escolhida foi ", opcoes)
+                escreval() 
+                para line <- 1 ate 4 faca 
+                    para column <- 1 ate 4 faca
+                        se (column > line) entao 
+                            escreva(matriz[line, column]:3)
+                        senao
+                            escreva("   ") // Espacos para manter o alinhamento
+                        fimSe
+                    fimPara
+                    escreval() // Pula uma linha no final de cada linha da matriz
+                fimPara
+                escreval()
+
+            caso 4
+            //apresenta o triangulo inferior da matriz
+                escreval()
+                escreval("opcao escolhida foi ", opcoes)
+                escreval() 
+                para line <- 1 ate 4 faca 
+                    para column <- 1 ate 4 faca
+                        se (column >= line) entao  
+                            escreva("   ")
+                        senao
+                            escreva(matriz[line, column]:3)
+                        fimSe
                     fimPara
                     escreval()
-                senao
-                    //apresenta o triangulo inferior da matriz
-                    se (opcoes = 4) entao
-                        escreval()
-                        escreval("opcao escolhida foi ", opcoes)
-                        escreval() 
-                        para line <- 1 ate 4 faca 
-                            para column <- 1 ate 4 faca
-                                se (column >= line) entao  
-                                    escreva("   ")
-                                senao
-                                    escreva(matriz[line, column]:3)
-                                fimSe
-                            fimPara
-                            escreval()
-                        fimPara
-                        escreval()  
-                    senao
-                    escreval ("Obrigado")
-                    fimse
-                fimse
-            fimse
-        fimse
+                fimPara
+                escreval()  
+
+            caso 5
+                escreval ("Obrigado")
+        fimEscolha
     ate (opcoes = 5)
+
 fimalgoritmo
